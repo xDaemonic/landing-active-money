@@ -1,0 +1,166 @@
+html:root
+	font-size: 10px
+
+*
+	box-sizing: border-box
+body
+	margin: 0
+	padding: 0
+	font-family: 'Proxima Nova'
+
+/* Global Variables */
+
+$text-color-light: #ffffff
+$text-color-semi: #5b5b5b
+$text-color-dark: #202020
+$active-color: #ffdc38
+
+/* Global Classes */
+.bold
+	font-weight: 700
+	color: $text-color-dark  
+
+/* Скрытие элементов */
+@media (max-width: 992px) 
+	.mobile-992
+		display: none 
+
+@media (max-width: 768px)
+	.mobile-768
+		display: none 
+
+/* Кнопки */
+
+.button
+	font-family: 'Proxima Nova'
+	font-size: 1.5rem
+	font-weight: 700
+	background-color: $active-color
+	color: $text-color-dark
+	border: none
+	outline: 0
+	border-radius: 50px 
+	line-height: 1.5rem
+	&-big
+		font-size: 1.6rem
+		line-height: 1.6rem
+
+
+/* Порог для ховер эффектов*/
+@media(min-width: 992px)
+	.button
+		&:hover
+			cursor: pointer
+			box-shadow: 0 0 13px rgba(0, 0, 0, 0.19)
+			background-color: #ffbb38
+	.top_call__wrap__num
+		&:hover
+			opacity: 0.8
+	.close
+		&:hover
+			cursor: pointer
+
+	.advantages-cert_img
+		&:hover
+			cursor: pointer
+			box-shadow: 0 0 13px rgba(0, 0, 0, 0.19)
+
+	.cert-img
+		&:hover
+			cursor: pointer
+
+	.slider-arrow
+		&:hover
+			cursor: pointer
+	
+	.contacts-descr_box__text
+		a
+			&:hover
+				opacity: 0.8
+
+
+
+/* фиксы для ПП */
+@media(min-width: 1200px)
+	.header
+		.container
+			padding-right: 0
+			padding-left: 0
+
+	.header-top_text 
+		margin-top: -5px
+		line-height: 23px
+
+	.learning
+		.container
+			padding-right: 0
+			padding-left: 0
+
+	.learning-text-fix
+		max-width: 277px
+		margin: 0 auto 
+
+	.advantages
+		.container
+			padding-right: 0
+			padding-left: 0
+
+	.services
+		.container
+			padding-right: 0
+			padding-left: 0
+
+	.footer
+		.container
+			padding-right: 0
+			padding-left: 0 
+
+@media (width: 768px)
+	.about-descr_logo__img-2::before
+		left: 30px !important
+	.about-descr_logo__img-1::before
+		left: 30px !important 
+
+/* Заголовки */
+
+.title
+	position: relative
+	margin-top: 0
+	text-align: center
+	font-family: 'Proxima Nova sb'
+	font-size: 2.6rem
+	font-weight: 400
+	text-transform: uppercase
+	color: $text-color-dark
+	&::before
+		content: ''
+		display: block
+		position: absolute
+		bottom: -17px
+		left: 50%
+		width: 24px
+		height: 1px
+		background-color: #7e66e7
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		bottom: -17px
+		right: 50% 
+		width: 24px
+		height: 1px
+		background-color: #1c8fd4
+
+@media (max-width: 576px)
+	.title
+		font-size: 13px 
+			
+			
+
+/* Настройки карт */
+iframe
+	display: none
+.ymaps-2-1-69-copyright__text
+	display: none
+.ymaps-2-1-69-copyright__link
+	display: none

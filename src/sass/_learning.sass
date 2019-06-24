@@ -1,0 +1,72 @@
+.learning
+	background-color: #f4f9fb
+	padding-top: 7.5rem
+	padding-bottom: 7.5rem
+	text-align: center
+	&-title
+		margin-bottom: 3.3rem
+	&-text
+		margin-bottom: 3.7rem
+		font-size: 1.8rem
+		font-weight: 300
+		line-height: 2.8rem
+		color: $text-color-semi
+		& :first-child
+			margin-bottom: 1.2rem
+		p
+			margin: 0
+			text-align: justify
+			text-align-last: center
+	&-wrap
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between 
+		flex-wrap: wrap
+		margin-bottom: -1px 
+		&_box
+			width: 31.5%
+			margin-bottom: 3.5rem
+			&__img
+				margin-bottom: 0.6rem
+				min-height: 6.2rem
+			&__text
+				font-size: 1.6rem
+				font-weight: 300
+				color: $text-color-semi
+				line-height: 22px
+	button
+		width: 29.9rem
+		height: 5.7rem
+		line-height: 25.47px
+
+@media (max-width: 992px)
+	.learning
+		&-wrap
+			&_box
+				width: 50%
+				&__text
+					max-width: 240px
+					margin: 0 auto 
+
+@media (max-width: 768px) 
+	.learning
+		padding-top: 4rem
+		padding-bottom: 4rem 
+
+@media (max-width: 576px)
+	.learning
+		&-title
+			margin-bottom: 3.5rem
+		&-text
+			p
+				font-size: 14px
+		&-wrap
+			&_box
+				width: 100%
+				&__text
+					max-width: 235px 
+					font-size: 14px
+					

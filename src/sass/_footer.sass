@@ -1,0 +1,42 @@
+.footer
+	position: relative
+	padding-top: 4.3em
+	padding-bottom: 2.3em
+	background-image: url(../img/footer-bg.png)
+	background-position: center
+	background-size: 100% 100%
+	&::after
+		content: ''
+		display: block
+		position: absolute
+		bottom: 67px
+		width: 100%
+		height: 1px
+		background-color: #fff
+		opacity: 0.2
+
+	.top
+		margin-bottom: 7.3rem
+	.bot
+		&-text
+			font-family: 'Open Sans', sans-serif
+			text-align: center
+			font-size: 13px
+			font-weight: 300
+			line-height: 17px
+			opacity: 0.5
+			color: $text-color-light
+
+@media (max-width: 768px)
+	.footer
+		padding-top: 2rem 
+		padding-bottom: 1rem
+		&::after
+			bottom: 30px
+		.top
+			margin-bottom: 2.7rem
+
+@media (max-width: 576px)
+	.bot
+		&-text
+			font-size: 10px !important

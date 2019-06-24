@@ -1,0 +1,67 @@
+.offer
+	padding-top: 8rem
+	padding-bottom: 7.8rem
+	background-image: url(../img/offer/offer-bg.jpg)
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	&-box
+		max-width: 618px
+		margin: 0 auto
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items-center
+		&_text
+			color: $text-color-light
+			&__title
+				margin: 2px 0
+				font-size: 2.6rem
+				font-weight: 400
+				line-height: 24px
+				text-transform: uppercase
+			&__subtitle
+				font-size: 1.8rem
+				font-weight: 300
+				line-height: 28px
+		button
+			width: 23rem
+			height: 5.5rem
+			font-size: 1.4rem
+
+@media (max-width: 768px)
+	.offer
+		padding-top: 4rem
+		padding-bottom: 4rem
+		&-box
+			&_text
+				&__title
+					margin: 0
+					line-height: 20px
+				&__subtitle
+					line-height: 23px
+
+@media (max-width: 576px)
+	.offer
+		&-box
+			&_text
+				&__title
+					font-size: 16px
+					line-height: 22px
+				&__subtitle
+					font-size: 14px
+					line-height: 14px
+			button
+				width: 19rem
+
+@media (max-width: 460px)
+	.offer
+		&-box
+			text-align: center
+			flex-wrap: wrap
+			justify-content: center
+			&_text
+				width: 100%
+				margin-bottom: 1rem 

@@ -1,0 +1,114 @@
+.overlay
+	display: none 
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	z-index: 10
+	background-image: url(../img/grad.jpg)
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	.modal
+		position: fixed
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)  
+		max-width: 360px
+		color: $text-color-light
+		z-index: 12
+		margin-left: 0
+
+.close
+	position: absolute
+	top: 11px
+	right: 11px
+	max-height: 14px
+	font-size: 28px
+	line-height: 14px 
+	opacity: 0.5
+
+.success
+	display: none  
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	z-index: 10
+	background-image: url(../img/grad.jpg)
+	background-repeat: no-repeat
+	background-size: 100% 100%
+	.thanks
+		position: fixed
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%) 
+		padding: 8.8rem 6.28rem
+		max-width: 360px
+		border: 1px solid #b0aeea 
+		text-align: center  
+		color: $text-color-light
+		z-index: 12 
+		&-title
+			margin-bottom: 2.1rem
+			font-size: 2.2rem
+			font-weight: 700
+			text-transform: uppercase
+		&-text
+			font-size: 1.6rem
+			font-weight: 400 
+
+@media (max-width: 768px)
+	.success
+		.thanks
+			max-width: max-content
+			padding: 79px 40px
+			&-title
+				font-size: 18px
+			&-text
+				font-size: 14px 
+
+ @media (max-width: 576px) 
+ 	.success
+	 	.thanks
+	 		width: 300px
+	 		height: 170px
+	 		padding: 1.8rem 2.28rem 
+	 		&-title
+	 			margin-top: 49px
+	 			font-size: 16px
+	 		&-text
+	 			font-size: 14px
+
+.cert-overlay
+	display: none
+	position: fixed
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	z-index: 10
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0, 0, 0, 0.5)
+		z-index: -1
+.cert
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	z-index: 12
+	text-align: center
+	&-img
+		width: 500px 
+
+@media (max-width: 576px)
+	.cert
+		&-img
+			width: 300px 

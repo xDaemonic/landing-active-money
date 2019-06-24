@@ -1,0 +1,87 @@
+
+.services
+	padding-top: 7.7rem
+	padding-bottom: 8rem
+	background-color: #f4f9fb
+	&-title
+		margin-bottom: 4.8rem 
+	&-wrap
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		&_box
+			width: 36rem
+			height: 45.2rem
+			border: 1px solid #eeedee
+			border-radius: 4px
+			text-align: center
+			background-color: #ffffff
+			&__logo
+				padding: 8px 9px 0
+				margin-bottom: 2.8rem
+				img
+					width: 100%
+			&__title
+				margin-bottom: 2rem
+				font-family: 'Proxima Nova sb'
+				font-size: 2rem
+				font-weight: 400
+				line-height: 22px
+				color: $text-color-dark
+			&__text
+				max-width: 75.4%
+				margin: 0 auto 2.9rem
+				font-size: 16px
+				font-weight: 400
+				line-height: 22px
+				color: $text-color-semi
+			button
+				width: 15rem
+				height: 4.5rem
+				font-size: 1.4rem
+
+@media (max-width: 1200px)
+	.services
+		&-wrap
+			&_box
+				width: 33rem
+				&__text
+					min-height: 88px
+
+@media (max-width: 992px)
+	.services
+		&-wrap
+			flex-wrap: wrap
+			justify-content: center
+			&_box
+				width: 50rem
+				height: 51rem
+				margin: 0 5rem 2rem 5rem
+				&__text
+					min-height: max-content  
+
+@media (max-width: 768px) 
+	.services
+		padding-top: 4rem
+		padding-bottom: 4rem
+		&-wrap
+			& :first-child
+				& :nth-child(3)
+					min-height: 88px
+			&_box
+				width: 40rem 
+				height: 54rem
+
+@media (max-width: 576px)
+	.services
+		&-wrap
+			& :nth-child(2)
+				& :nth-of-type(3)
+					min-height: 88px
+			&_box
+				margin: 0 0 2rem 0
+				&__text
+					font-size: 14px
